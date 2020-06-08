@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url(E:\login-forms\photo\mu.jpeg);
+    background-size: cover;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50% -50%);
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, .8);
+    box-sizing: border-box;
+    box-shadow: 0, 15px, 25px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.box .input-box {
+    position: relative;
+}
+
+.box .input-box input {
+    color: #fff;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box .input-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .input-box input:focus~label {
+    top: -10px;
+    left: 0;
+    color: #03a9f4;
+}
